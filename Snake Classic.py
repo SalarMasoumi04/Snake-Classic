@@ -45,9 +45,9 @@ def display():
     # غذا قرمز
     glColor3f(1, 0, 0)
     draw_cell(*food)
-    # سر مار سبز روشن و بدن سبز تیره
+    # سر مار نارنجی و بدن فسفری
     for i, (x, y) in enumerate(snake):
-        glColor3f(0, 1, 0) if i == 0 else glColor3f(0, 0.6, 0)
+        glColor3f(1.0, 0.4, 0.0) if i == 0 else glColor3f(0.2, 1.0, 0.2)
         draw_cell(x, y)
     glFlush()
 
